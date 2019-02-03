@@ -1,0 +1,41 @@
+/* theme color */
+$--color-primary: teal;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+/* global font */
+
+$heading-font: 'Mukta', sans-serif;
+$primary-font: 'Lato', sans-serif;
+
+* {
+    font-family: $primary-font;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+    font-size: 72px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* category colorization */
+
+@import './styles/colors.scss';
+
+/* body styles */
+
+  body {
+    background: #0d0d0d;
+  }
